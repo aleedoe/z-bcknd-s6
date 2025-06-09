@@ -11,6 +11,7 @@ app.use(express.json());
 // CORS Configuration - Tambahkan ini
 app.use(cors({
     origin: 'http://localhost:3000', // Izinkan hanya dari frontend
+    origin: 'http://localhost:3003',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
